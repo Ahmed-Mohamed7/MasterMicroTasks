@@ -30,6 +30,7 @@ Query about which devices are in a given topology.
 
 QueryDevicesWithNetlist()
 Query about which devices are connected to a given netlist node in a given topology.
+```
 
 ### Examples
 
@@ -37,3 +38,4 @@ Query about which devices are connected to a given netlist node in a given topol
 ![example1](assets/Screenshot_1.png)
 
 ## RUN UnitTest
+![example1](assets/Screenshot_2.png)
