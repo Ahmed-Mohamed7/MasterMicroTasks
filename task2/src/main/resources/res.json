@@ -1,0 +1,1 @@
+{"component":[{"res":{"default":100,"min":10,"max":1000},"netList":{"t1":"vdd","t2":"n1"},"id":"res1","type":"resistor"},{"res":{"default":1.5,"min":1,"max":2},"netList":{"gate":"vin","source":"vss","drain":"n1"},"id":"m1","type":"nmos"}],"id":"top1"}
