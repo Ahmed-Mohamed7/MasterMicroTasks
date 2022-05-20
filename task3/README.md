@@ -11,3 +11,4 @@
   *``` g++ .\main.cpp; ./a.exe ```
   
 ## OutPut Example
+![example1](assets/Screenshot_1.png)
