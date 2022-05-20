@@ -68,8 +68,10 @@ class Validation:
         '''
         try:
             ast.parse(eq.lower())
+            x=1
+            print(type(eq))
+            eval(eq)
         except :
-            print("ho")
             errs.append(INVALID_EQUATION)
 
     def checkRange(self,minX, maxX,errs):

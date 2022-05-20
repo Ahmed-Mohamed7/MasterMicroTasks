@@ -1,7 +1,7 @@
 from lib2to3.pgen2.token import EQUAL
 import pytest
 import utils
-import main2
+import main
 
 
 def test1_empty_field():
@@ -56,11 +56,11 @@ def test_invalid_equation():
     max = 5
     errs = []
     utils.Filter().filterEquation(eq)
-    utils.Validation(eq , min ,max,errs) 
+    utils.Validation(eq , min ,max,errs)    
     assert errs[0] == utils.INVALID_EQUATION
 
 
-def test_successful():
+def test_successful1():
     eq = "x+3"
     min = "1"
     max = "5"
@@ -68,6 +68,17 @@ def test_successful():
     utils.Filter().filterNumbers(max,errs)
     utils.Filter().filterEquation(eq)
     utils.Validation(eq , min ,max,errs) 
+    assert len(errs) == 0
+
+def test_successful2():
+    eq = "x^2+5"
+    min = "1"
+    max = "5"
+    errs = []
+    utils.Filter().filterNumbers(max,errs)
+    utils.Filter().filterEquation(eq)
+    utils.Validation(eq , min ,max,errs) 
+    print(errs)
     assert len(errs) == 0
 
 
